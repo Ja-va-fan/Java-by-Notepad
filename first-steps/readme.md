@@ -17,12 +17,13 @@ Mastering this doesn't mean you rock at Java. :)
 Before going any further you must have JDK, Java Development Kit.
 The JRE, Java Runtime Environment, version will not suffice.
 
-__Verify__
+##### Verify
+
 Open a terminal (console) and type:
 
 	javac -version   [Enter]
 
-If you get the response `javac 1.7.0_80` or something near by you are home free.
+If you get the response `javac 1.7.0_80` or something near-by you are home free.
 
 If you get the response `javac: command not found` you need to install the Java JDK.
 
@@ -63,7 +64,7 @@ The resulting `Hello.class` file contains what is called byte-code and that can 
 
 ##### Compile
 
-	javac Hello.class
+	javac Hello.java
 
 _This command will, hopefully, end without any comment what so ever. If it does it most probably will tell you where you made the error._
 
