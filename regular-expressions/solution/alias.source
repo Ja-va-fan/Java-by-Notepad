@@ -1,0 +1,9 @@
+# Source this file to add the alias `$ source run.alias`
+
+export srcDir=./
+export classDir=target/classes/
+export mainClass=HTML2MD
+
+alias compile='mkdir -p $classDir;echo compiling...;javac -d $classDir -sourcepath $srcDir @classes'
+function run { compile; echo 'running...'; java -cp $classDir $mainClass $@; echo 'done!'; }
+alias makejar='jar cfe `basename $mainClass`.jar $mainClass -C $classDir `echo $mainClass|cut -d '/' -f1`'

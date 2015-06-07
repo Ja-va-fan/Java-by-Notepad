@@ -97,5 +97,26 @@ _Please note that java does not require nor does it accept the `.class` extensio
 
 ### The Solution is in the solution folder
 
-If you want to run the test without writing anything the Hello.java file is available in the solution folder.
+If you want to run the test without writing anything, the Hello.java file is available in the solution folder.
 
+In that folder there are also some other files that simplifies compiling, running and the making of a runnable jar:
+
+* alias.source - This file, if sourced, creates these aliases:
+	- compile - compiles the files in the classes file
+	- run - compiles and runs the mainClass
+	- makejar - builds a runnable jar
+* classes - Contains the list of files to be compiled.
+
+
+#### Sourcing the alias.source file
+
+In linux, sourcing a file means that it is run in the current context.
+This is the only way add environment variables to the current process.
+
+##### Source like this
+
+	source alias.source
+
+##### or like this
+
+	. alias.source
