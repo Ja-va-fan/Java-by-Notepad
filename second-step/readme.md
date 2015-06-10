@@ -10,7 +10,7 @@ Not to invent something new we are going to use the Maven default structure:
 
 	src
 	├── main
-   |   └── java
+	|   └── java
 	|		  └── packages
 	|				└── java source files
 
@@ -60,9 +60,9 @@ Create the folder structure com/domain/message from the folder src/main/java
 
 Enter this in the file src/main/java/com/domain/message/Message.java
 
+```java
 	package com.domain.message;
 
-```java
 	public class Message {
 		String message = "It is really working!";
 		public Message(String message) {
@@ -88,7 +88,9 @@ We now have a new complexity, not only do we have two classes we also have a src
 To compile this we need to use the `-sourcepath src/main/java` switch argument to specify the source directory.
 We also use the `-d target/classes` to structure the path where the class-files will be created.
 
-	javac -d src/main/java -sourcepath /src/main/java src/main/java/com/domain/main/Main.java
+	javac -d target/classes -sourcepath src/main/java src/main/java/com/domain/main/Main.java
+
+> note: target/classes folder must exist.
 
 _By entering `-sourcepath src/main/java` the compiler automatically compiles the Message.java file since it is needed by Main.java._
 
