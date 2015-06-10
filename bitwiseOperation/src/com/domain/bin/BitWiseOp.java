@@ -1,9 +1,17 @@
 package com.domain.bin;
 
+
 public class BitWiseOp {
 
 	/**
+	 * this is a simple bit operations execise.
+	 * can be run in an ide or other tool.
 	 * 
+	 * The java class can be compiled and run and the exercise will print out what you need to do to get to next step.
+	 * your solution should be written in the switch case and for corresponding case. e.g. step 1, should be written in switch case 1 and so on.
+	 * the result of the operation should be stored in the aByte variable.
+	 * 
+	 * Here is some bit operations available, some will be used in the exercise.
 	 * Operator		Name			Example		Result	Description
 	 *	a & b		and				3 & 5		1		1 if both bits are 1.
 	 *	a | b		or 				3 | 5 		7		1 if either bit is 1.
@@ -28,22 +36,30 @@ public class BitWiseOp {
 			step++;
 			switch(step){
 				case 1:
-					// do your bit operations here:
+					// do your bit operations, to pass step 1 here:
+					
+//					aByte = 
 					
 					// end
 					break;
 				case 2:
-					// do your bit operations here:
+					// do your bit operations  to pass step 2 here:
+					
+//					aByte = 
 					
 					// end
 					break;
 				case 3:
-					// do your bit operations here:
+					// do your bit operations  to pass step 3 here:
+					
+//					aByte = 
 					
 					// end
 					break;
 				case 4:
-					// do your bit operations here:
+					// do your bit operations  to pass step 4 here:
+					
+//					aByte = 
 					
 					// end
 					break;	
